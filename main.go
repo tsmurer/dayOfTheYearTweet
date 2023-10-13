@@ -49,6 +49,8 @@ func main() {
 		return
 	}
 
-	parse(responseBody)
+	for _, v := range scrape(responseBody) {
+		fmt.Println("FULLSTRING: ", v)
+	}
 
 }
